@@ -1,0 +1,112 @@
+.contatos {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-areas:
+    'tittle tittle tittle'
+    'contato social link';
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  align-items: center; /* Centraliza verticalmente */
+  justify-items: center; /* Centraliza horizontalmente */
+  padding: 0;
+  background-color: #000000;
+  border-radius: 8px;
+  gap: 16px;
+  text-align: center;
+  height: 100vh;
+  margin-top: 80px; /* Maior margem para descer mais a seção */
+}
+
+.section__tittle {
+  margin: 0;
+  padding: 40px 0 20px; /* Aumenta o espaço acima do título */
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contato-container, .link-container, .contato-descricao {
+  background-color: #204d77;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.contato-container h3, .link-container h3, .contato-descricao h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+.contato-container p, .link-container p, .contato-descricao p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.contato-item {
+  display: flex;
+  gap: 12px;
+}
+
+.contato-item__icon {
+  font-size: 1.25rem;
+}
+
+.social-container {
+  grid-area: social;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+}
+
+.social {
+  width: 64px;
+  height: 64px;
+  background-color: #204d77;
+  font-size: 2rem;
+  display: grid;
+  place-content: center;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.social:hover {
+  color: #fff;
+}
+
+.social:nth-child(1):hover {
+  background-color: #0073b1;
+}
+
+.social:nth-child(2):hover {
+  background-color: #25d366;
+}
+
+.social:nth-child(3):hover {
+  background-color: #ea4335;
+}
+
+.link-container {
+  grid-area: link;
+  text-align: center;
+  margin: 0;
+}
