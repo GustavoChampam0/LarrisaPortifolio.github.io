@@ -369,69 +369,94 @@ footer p {
   color: #aaa;
 }
 
-/* Responsividade */
+/* style.css */
 @media (max-width: 960px) {
+  /* Ajuste da Home */
   .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: auto;
+    padding: 20px;
   }
 
   .profile__name {
-    font-size: 3rem; /* Ajustando o tamanho da fonte para dispositivos menores */
+    font-size: 3rem;
   }
 
-  .profile__text {
-    font-size: 1.2rem; /* Ajustando o texto para dispositivos menores */
+  /* Ajustes na Sobre Mim */
+  .sobre-mim {
+    width: 100%;
+    padding: 0 20px;
+    display: block;
+  }
+
+  .description__text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  /* Projetos e Cards */
+  .card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .card-container img {
+    width: 100%;
+  }
+
+  /* Ajustes na seção de Contatos */
+  .contatos {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .social-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .social a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 640px) {
-  .menu {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .logo img {
-    width: 50px;
-    height: 50px;
-  }
-
+  /* Ajustes no Home */
   .home {
-    flex-direction: column;
-    justify-content: center;
+    padding: 20px;
   }
 
   .profile__name {
     font-size: 2.5rem;
   }
 
-  .profile__text {
-    font-size: 1.2rem;
-    text-align: center;
+  /* Ajustes na Sobre Mim */
+  .sobre-mim {
+    display: block;
+    padding: 0;
   }
-}
 
-@media (max-width: 768px) {
   .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cards ajustados para 1 fr */
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
-  .card {
-    height: auto; /* Ajuste de altura automática para o card */
-    font-size: 14px;
+  .contatos {
+    flex-direction: column;
+    gap: 20px;
   }
 
   .social-container {
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    gap: 15px;
   }
 
-  .social {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
+  .social a {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
   }
 }
