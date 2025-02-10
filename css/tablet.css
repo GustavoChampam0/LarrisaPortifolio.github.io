@@ -1,0 +1,19 @@
+/* tablet.css */
+@media (max-width: 960px) {
+  .sobre-mim {
+    flex-direction: column; /* Deixa a seção em coluna para dispositivos médios */
+  }
+
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Ajusta o número de colunas */
+  }
+
+  .skills__container {
+    justify-content: center; /* Centraliza os ícones das skills */
+  }
+
+  .description__text {
+    font-size: 1rem; /* Tamanho de texto para melhor legibilidade */
+    line-height: 1.6; /* Aumenta a linha para tornar o texto mais legível */
+  }
+}

@@ -1,0 +1,35 @@
+/* mobile.css */
+@media (max-width: 640px) {
+  .contatos {
+    height: auto; /* Remove altura fixa */
+    padding: 20px; /* Ajuste de espaçamento */
+  }
+
+  .social-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .social {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr 1fr; /* Ajuste para 2 colunas em vez de 3 */
+  }
+
+  .card {
+    height: 220px;
+    font-size: 16px; /* Ajuste do tamanho do texto dentro dos cards */
+  }
+
+  .profile__name {
+    font-size: 2.5rem; /* Tamanho de fonte ajustado para dispositivos móveis */
+  }
+
+  .profile__text {
+    font-size: 1.3rem; /* Ajuste da descrição */
+  }
+}
