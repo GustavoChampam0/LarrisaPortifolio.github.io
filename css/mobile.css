@@ -2,34 +2,52 @@
 @media (max-width: 640px) {
   .contatos {
     height: auto; /* Remove altura fixa */
-    padding: 20px; /* Ajuste de espaçamento */
+    padding: 20px;
+    margin: 0 15px; /* Adicionando margem para evitar o contato com as bordas */
   }
 
   .social-container {
     flex-direction: column;
     gap: 15px;
+    align-items: center; /* Centraliza os itens */
   }
 
   .social {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
+    width: 60px; /* Aumentar um pouco o tamanho dos ícones sociais */
+    height: 60px;
+    font-size: 1.8rem; /* Ajuste do tamanho dos ícones */
   }
 
   .card-container {
     grid-template-columns: 1fr 1fr; /* Ajuste para 2 colunas em vez de 3 */
+    gap: 20px; /* Adicionando espaço entre os cards */
   }
 
   .card {
-    height: 220px;
-    font-size: 16px; /* Ajuste do tamanho do texto dentro dos cards */
+    height: auto; /* Altura automática para garantir que o conteúdo seja exibido corretamente */
+    font-size: 14px; /* Reduzindo um pouco o tamanho da fonte */
+    padding: 10px; /* Espaçamento interno */
+    display: flex; /* Garante que o conteúdo do card se ajuste corretamente */
+    flex-direction: column;
   }
 
   .profile__name {
-    font-size: 2.5rem; /* Tamanho de fonte ajustado para dispositivos móveis */
+    font-size: 2.2rem; /* Tamanho de fonte ajustado para dispositivos móveis */
   }
 
   .profile__text {
-    font-size: 1.3rem; /* Ajuste da descrição */
+    font-size: 1.2rem; /* Ajuste da descrição */
+    line-height: 1.5; /* Melhorando a legibilidade */
+  }
+
+  img {
+    max-width: 100%; /* Tornando as imagens responsivas */
+    height: auto;
+    object-fit: cover; /* Garantindo que as imagens cubram o espaço sem distorcer */
+  }
+
+  /* Garantir que o conteúdo se ajuste bem nas seções */
+  header, section {
+    padding: 10px; /* Adicionando mais padding para evitar que o conteúdo fique colado nas bordas */
   }
 }
